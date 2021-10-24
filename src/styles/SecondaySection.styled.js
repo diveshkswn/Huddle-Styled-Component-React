@@ -17,6 +17,7 @@ width: 100%;
 height: 300px;
 display: flex;
 justify-content: space-evenly;
+flex-direction: ${(props) => (props.direction === 'reverse' ? 'row-reverse' : 'row')};
 align-items: center;
 background-color: ${(props) => (props.id === 2 ? 'white' : props.theme.color_Light_Cyan)};
 
@@ -38,12 +39,12 @@ height: 50px;
 export const SectionBorderImage = styled.img`
 position: absolute;
 width: 100%;
-height:100%;
+height:102%;
 object-fit: fill;
 `;
 
 export const SectionDetailContainer = styled.div`
-padding: 50px;
+padding: 0px 50px;
 width: 600px;
 height: 100%;
 @media(max-width : ${(props) => props.theme.tabWidth}){

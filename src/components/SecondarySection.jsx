@@ -13,14 +13,14 @@ function populateSecondarySections(eachSection, i) {
         {eachSection.id !== 2 && <SectionBorderImage src="/images/bg-section-top-desktop-1.svg" />}
       </SectionBorderImageContainer>
 
-      <SectionContent id={eachSection.id}>
+      <SectionContent id={eachSection.id} name="lol" direction={eachSection.id === 2 && 'reverse'}>
         <SectionDetailContainer>
           <SectionTitle>{eachSection.title}</SectionTitle>
           <SectionPara>{eachSection.body}</SectionPara>
         </SectionDetailContainer>
 
         <SectionImageContainer>
-          <SectionBorderImage src={`/images/${eachSection.image}`} />
+          <SectionImage src={`/images/${eachSection.image}`} />
         </SectionImageContainer>
 
       </SectionContent>

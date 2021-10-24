@@ -6,6 +6,8 @@ import Header from './components/Header';
 import MainSection from './components/MainSection';
 import { title, Paragraph, Content } from './data';
 import SecondarySection from './components/SecondarySection';
+import GetStarted from './components/GetStarted';
+import Footer from './components/Footer';
 
 function App() {
   const theme = {
@@ -31,6 +33,8 @@ function App() {
 
         <MainSection title={title} para={Paragraph} />
         <SecondarySection SectionData={Content} />
+        <GetStarted />
+        <Footer />
       </MainAppContainer>
     </ThemeProvider>
   );
