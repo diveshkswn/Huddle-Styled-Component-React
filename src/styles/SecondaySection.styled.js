@@ -23,6 +23,7 @@ background-color: ${(props) => (props.id === 2 ? 'white' : props.theme.color_Lig
 
 @media(max-width : ${(props) => props.theme.tabWidth}){
     flex-direction: column;
+    margin: 0;
     height: 50vh;
     justify-content: space-between;
 }
@@ -32,7 +33,6 @@ export const SectionBorderImageContainer = styled.div`
 position: relative;
 width: 100%;
 height: 50px;
-margin: -2px;
 
 `;
 

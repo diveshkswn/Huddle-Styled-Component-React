@@ -39,11 +39,64 @@ export const CompanyInfoContainer = styled.div`
 width: 100%;
 height: 100%;
 padding : 0px 10vw;
-display: grid;
+display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
-background-color: aliceblue;
+color:aliceblue;
+background-color: ${(props) => props.theme.color_Dark_Cyan};
+`;
+
+export const CompanyLogoContainer = styled.div`
+position: relative;
+height: 150px;
+width: 400px;
+
+@media(max-width : ${(props) => props.theme.tabWidth}){
+    width: 80vw;
+}
+`;
+
+export const CompanyLogoImage = styled.img`
+height: 100%;
+width : 100%;
+object-fit: contain;
+filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(193deg) brightness(103%) contrast(102%);
+`;
+
+export const AboutCompany = styled.p`
+width: 400px;
+height: 150px;
+text-align: left;
+padding : 20px 5px;
+
+@media(max-width : ${(props) => props.theme.tabWidth}){
+    width: 80vw;
+}
+`;
+
+export const CompanyPhone = styled.p`
+width: 400px;
+height: 30px;
+text-align: left;
+padding : 20px 5px;
+font-weight: 700;
+
+@media(max-width : ${(props) => props.theme.tabWidth}){
+    width: 80vw;
+}
+`;
+
+export const CompanyEmail = styled.p`
+width: 400px;
+text-align: left;
+height: 30px;
+padding : 20px 5px;
+font-weight: 700;
+
+@media(max-width : ${(props) => props.theme.tabWidth}){
+    width: 80vw;
+}
 `;
 
 export const NewsLetterContainer = styled.div`
