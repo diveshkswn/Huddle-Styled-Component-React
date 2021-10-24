@@ -11,11 +11,12 @@ export const FooterTopBorderImageContainer = styled.div`
 width: 100%;
 height: 150px;
 position: relative;
+margin: -2px;
 `;
 
 export const FooterTopBorderImage = styled.img`
 position: absolute;
-height:102%;
+height:100%;
 width: 100%;
 object-fit: fill;
 `;

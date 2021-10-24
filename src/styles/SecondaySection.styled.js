@@ -32,7 +32,7 @@ export const SectionBorderImageContainer = styled.div`
 position: relative;
 width: 100%;
 height: 50px;
-
+margin: -2px;
 
 `;
 
