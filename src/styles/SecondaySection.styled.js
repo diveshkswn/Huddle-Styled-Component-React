@@ -39,7 +39,7 @@ height: 50px;
 export const SectionBorderImage = styled.img`
 position: absolute;
 width: 100%;
-height:102%;
+height:100%;
 object-fit: fill;
 `;
 
